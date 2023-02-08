@@ -4,10 +4,11 @@ import { Button } from '@ifss/ui';
 import { Desc } from '@ifss/ui';
 
 // import "@ifss/person/dist/esm/index.less";
-import { add } from '@ifss/tools';
+import { add, say } from '@ifss/tools';
 import './App.css';
 
 console.log(add(1, 2), 'add');
+console.log(say(), 'say');
 function App() {
   // const Button = require("@ifss/ui");
   // console.log(Button, 'ButtonButtonButtonButton')
