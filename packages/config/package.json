@@ -1,0 +1,16 @@
+{
+  "name": "@ifss/config",
+  "version": "0.0.1",
+  "author": "buq",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buquan/ifss"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,tsx,ts,less,json}\""
+  }
+}

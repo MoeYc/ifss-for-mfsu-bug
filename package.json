@@ -1,0 +1,55 @@
+{
+  "name": "ifss-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "author": "buq",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buquan/ifss"
+  },
+  "scripts": {
+    "dev": "turbo run dev --no-cache --continue",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "changeset": "changeset",
+    "version-pkgs": "changeset version",
+    "release": "turbo run build && changeset publish",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@types/node": "^16.11.14",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/test": "^3.0.5",
+    "dumi": "^1.0.10",
+    "eslint": "^8.4.1",
+    "father-build": "^1.22.5",
+    "gh-pages": "^3.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "turbo": "latest",
+    "typescript": "^4.5.4",
+    "yorkie": "^2.0.0"
+  },
+  "packageManager": "pnpm@7.15.0",
+  "dependencies": {
+    "antd": "^4.18.9"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx,less}": [
+      "prettier --write",
+      "pnpm run lint --"
+    ]
+  }
+}

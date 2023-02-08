@@ -1,0 +1,17 @@
+{
+  "name": "@ifss/eslint-config-custom",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-config-turbo": "latest",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@ifss/tools",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buquan/ifss"
+  },
+  "files": [
+    "es",
+    "lib",
+    "index.d.ts"
+  ],
+  "module": "./es/index.js",
+  "main": "./lib/index.js",
+  "author": "buq",
+  "license": "ISC",
+  "scripts": {
+    "build": "father-build",
+    "dev": "father-build --watch",
+    "format": "prettier --write \"**/*.{js,jsx,tsx,ts,less,json}\"",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint --fix '**/*.{js,jsx,ts,tsx}'"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@ifss/config": "workspace:*",
+    "@ifss/eslint-config-custom": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  }
+}
