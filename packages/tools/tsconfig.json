@@ -35,13 +35,5 @@
     // "files": ["*.ts", "*.tsx", ".md"],
   },
   "include": ["src/**/*", "dosc/**/*"],
-  "exclude": [
-    "node_modules",
-    "lib",
-    "es",
-    "dist",
-    "typings",
-    "**/__test__",
-    "test"
-  ]
+  "exclude": ["node_modules", "lib", "es", "dist", "typings", "**/__test__", "test"]
 }

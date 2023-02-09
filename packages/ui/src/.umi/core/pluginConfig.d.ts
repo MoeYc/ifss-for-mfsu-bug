@@ -60,12 +60,7 @@ export interface IConfigFromPlugins {
     importLoaders?: number;
     onlyLocals?: boolean;
     esModule?: boolean;
-    localsConvention?:
-      | 'asIs'
-      | 'camelCase'
-      | 'camelCaseOnly'
-      | 'dashes'
-      | 'dashesOnly';
+    localsConvention?: 'asIs' | 'camelCase' | 'camelCaseOnly' | 'dashes' | 'dashesOnly';
   };
   cssModulesTypescriptLoader?: {
     mode?: 'emit' | 'verify';

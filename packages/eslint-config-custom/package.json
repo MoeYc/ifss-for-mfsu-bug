@@ -13,5 +13,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,tsx,ts,less,json}\""
   }
 }

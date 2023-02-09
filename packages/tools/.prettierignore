@@ -2,6 +2,14 @@
 **/*.ejs
 **/*.html
 package.json
+
+# umi
 .umi
 .umi-production
 .umi-test
+.env.local
+
+#library
+es
+lib
+.tubo

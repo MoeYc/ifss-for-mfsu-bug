@@ -9,12 +9,7 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-const Button: FC<ButtonProps> = ({
-  children,
-  onClick,
-  type = 'default',
-  disabled,
-}) => {
+const Button: FC<ButtonProps> = ({ children, onClick, type = 'default', disabled }) => {
   console.log('add -> 2 + 31', add(2, 3));
   return (
     <button className="biz_dev_button" onClick={onClick} disabled={disabled}>

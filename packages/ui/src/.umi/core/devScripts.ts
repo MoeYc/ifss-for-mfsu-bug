@@ -40,7 +40,7 @@ if (window.g_initWebpackHotDevClient) {
       },
       function (err: Error) {
         handleApplyUpdates(err, null);
-      },
+      }
     );
   }
 

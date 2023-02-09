@@ -1,10 +1,15 @@
-./functions/mock
-./mock/**
-**/security.js
-./src/components/MarkerBoard/**
-./src/utils/vc-player-sdk/**
-./src/pages/equipment/monitor/video/components/VcPlayer/**
-./public/scripts/**
-./public/iconfont/**
-./src/assets/iconfont/**
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
 
+# umi
+.umi
+.umi-production
+.umi-test
+.env.local
+
+#library
+es
+lib
+.tubo

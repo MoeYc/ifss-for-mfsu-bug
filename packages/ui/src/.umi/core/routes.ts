@@ -14,8 +14,7 @@ export function getRoutes() {
       layout: false,
       wrappers: [
         dynamic({
-          loader: () =>
-            import(/* webpackChunkName: 'wrappers' */ '../dumi/layout'),
+          loader: () => import(/* webpackChunkName: 'wrappers' */ '../dumi/layout'),
         }),
       ],
       component: ((props) =>
@@ -55,11 +54,7 @@ export function getRoutes() {
 
                 case 2:
                   // render demo with previewer
-                  return React.createElement(
-                    Previewer,
-                    renderArgs[0],
-                    renderArgs[1],
-                  );
+                  return React.createElement(Previewer, renderArgs[0], renderArgs[1]);
 
                 default:
                   return `Demo ${props.match.params.uuid} not found :(`;
@@ -79,8 +74,7 @@ export function getRoutes() {
       path: '/',
       wrappers: [
         dynamic({
-          loader: () =>
-            import(/* webpackChunkName: 'wrappers' */ '../dumi/layout'),
+          loader: () => import(/* webpackChunkName: 'wrappers' */ '../dumi/layout'),
         }),
         dynamic({
           loader: () =>
