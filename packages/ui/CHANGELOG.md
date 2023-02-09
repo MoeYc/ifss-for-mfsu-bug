@@ -1,5 +1,11 @@
 # @ifss/ui
 
+## 0.0.4
+
+### Patch Changes
+
+- 413b94b: change btn
+
 ## 0.0.3
 
 ### Patch Changes

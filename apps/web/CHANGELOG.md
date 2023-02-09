@@ -1,5 +1,12 @@
 # web
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [413b94b]
+  - @ifss/ui@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes
