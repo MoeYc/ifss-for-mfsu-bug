@@ -1,5 +1,5 @@
 
-> web@0.0.3 build /Users/buquan/Desktop/githubs/ifss/apps/web
+> web@0.0.4 build /Users/buquan/Desktop/githubs/ifss/apps/web
 > react-scripts build
 
 Creating an optimized production build...
@@ -7,9 +7,9 @@ Compiled successfully.
 
 File sizes after gzip:
 
-  43.82 kB  build/static/js/main.964e2ca7.js
-  1.78 kB   build/static/js/741.512a97a4.chunk.js
-  594 B     build/static/css/main.9055a635.css
+  43.89 kB (+76 B)  build/static/js/main.5b7671c6.js
+  1.78 kB           build/static/js/741.512a97a4.chunk.js
+  579 B (-15 B)     build/static/css/main.d244ebe9.css
 
 The project was built assuming it is hosted at /.
 You can control this with the homepage field in your package.json.

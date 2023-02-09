@@ -22,7 +22,7 @@ module.exports = {
     'react/forbid-prop-types': 0,
     'react/no-array-index-key': 0,
     'react/jsx-one-expression-per-line': 0,
-    'import/no-unresolved': 0,
+    // 'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0,
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,

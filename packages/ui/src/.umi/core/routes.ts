@@ -3,7 +3,7 @@ import React from 'react';
 import {
   ApplyPluginsType,
   dynamic,
-} from '/Users/buquan/Desktop/turbo/examples/with-create-react-app/node_modules/.pnpm/@umijs+runtime@3.5.36_react@16.14.0/node_modules/@umijs/runtime';
+} from '/Users/buquan/Desktop/githubs/ifss/node_modules/.pnpm/@umijs+runtime@3.5.36_react@16.14.0/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -13,16 +13,14 @@ export function getRoutes() {
       path: '/~demos/:uuid',
       layout: false,
       wrappers: [
-        dynamic({
-          loader: () => import(/* webpackChunkName: 'wrappers' */ '../dumi/layout'),
-        }),
+        dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */ '../dumi/layout') }),
       ],
       component: ((props) =>
         dynamic({
           loader: async () => {
             const React = await import('react');
             const { default: getDemoRenderArgs } = await import(
-              /* webpackChunkName: 'dumi_demos' */ '/Users/buquan/Desktop/turbo/examples/with-create-react-app/node_modules/.pnpm/@umijs+preset-dumi@1.1.50_3hxwqeezyxtz3u3nxhdq2kith4/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs'
+              /* webpackChunkName: 'dumi_demos' */ '/Users/buquan/Desktop/githubs/ifss/node_modules/.pnpm/@umijs+preset-dumi@1.1.50_2kna6ed4yswa4523syliufmf6i/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs'
             );
             const { default: Previewer } = await import(
               /* webpackChunkName: 'dumi_demos' */ 'dumi-theme-default/es/builtins/Previewer.js'
@@ -73,13 +71,11 @@ export function getRoutes() {
       layout: false,
       path: '/',
       wrappers: [
-        dynamic({
-          loader: () => import(/* webpackChunkName: 'wrappers' */ '../dumi/layout'),
-        }),
+        dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */ '../dumi/layout') }),
         dynamic({
           loader: () =>
             import(
-              /* webpackChunkName: 'wrappers' */ '/Users/buquan/Desktop/turbo/examples/with-create-react-app/node_modules/.pnpm/dumi-theme-default@1.1.24_unpqg3w4nhouqwcgrxw7nqv424/node_modules/dumi-theme-default/es/layout.js'
+              /* webpackChunkName: 'wrappers' */ '/Users/buquan/Desktop/githubs/ifss/node_modules/.pnpm/dumi-theme-default@1.1.24_unpqg3w4nhouqwcgrxw7nqv424/node_modules/dumi-theme-default/es/layout.js'
             ),
         }),
       ],
@@ -89,7 +85,7 @@ export function getRoutes() {
           component: dynamic({
             loader: () =>
               import(
-                /* webpackChunkName: 'README.md' */ '/Users/buquan/Desktop/turbo/examples/with-create-react-app/packages/ui/README.md'
+                /* webpackChunkName: 'README.md' */ '/Users/buquan/Desktop/githubs/ifss/packages/ui/README.md'
               ),
           }),
           exact: true,
@@ -97,7 +93,7 @@ export function getRoutes() {
             locale: 'en-US',
             order: null,
             filePath: 'README.md',
-            updatedTime: 1675769167974,
+            updatedTime: 1675822121000,
             slugs: [
               {
                 depth: 2,

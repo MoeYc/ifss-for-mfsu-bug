@@ -8,16 +8,17 @@
   },
   "files": [
     "es",
-    "lib",
-    "index.d.ts"
+    "lib"
   ],
   "module": "./es/index.js",
   "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "author": "buq",
   "license": "ISC",
   "scripts": {
     "build": "father-build",
     "dev": "father-build --watch",
+    "abc": "dumi dev",
     "format": "prettier --write \"**/*.{js,jsx,tsx,ts,less,json}\"",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix '**/*.{js,jsx,ts,tsx}'"

@@ -1,17 +1,18 @@
 import React from 'react';
 
 import { Button } from '@ifss/ui';
-import { Desc } from '@ifss/ui';
+// import { Desc } from '@ifss/ui';
 
-// import "@ifss/person/dist/esm/index.less";
-import { add, say } from '@ifss/tools';
+import { add, say, sub } from '@ifss/tools';
 import './App.css';
 
-console.log(add(1, 2), 'add');
-console.log(say(), 'say');
+console.log(add, 'add');
+console.log(sub, 'sub');
+console.log(say, 'say');
+// console.log(Button, 'ButtonButtonButtonButton')
+
 function App() {
   // const Button = require("@ifss/ui");
-  // console.log(Button, 'ButtonButtonButtonButton')
   return (
     <div className="App">
       <header className="App-header">
@@ -20,10 +21,11 @@ function App() {
           <div className="Turborepo">Turborepo Example</div>
         </h1>
         <div>
+          {/* <Dialog>DialogDialogDialog</Dialog> */}
           <h1>
             person: <Button />{' '}
           </h1>
-          <Desc />
+          {/* <Desc /> */}
         </div>
       </header>
     </div>

@@ -1,4 +1,0 @@
-{
-  "extends": "@ifss/config/react-app.json",
-  "include": ["src"]
-}

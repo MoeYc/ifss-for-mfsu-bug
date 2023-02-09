@@ -7,8 +7,9 @@ export default {
   esm: {
     // rollup
     type: 'babel',
-    // file: 'dist',
+    file: 'es',
     minify: false, // 压缩文件
+    // typescript: true
     // importLibToEs: true,
   },
   cjs: {
@@ -16,8 +17,6 @@ export default {
     type: 'babel',
     file: 'lib',
     minify: false, // 压缩文件
+    // typescript: true
   },
-  pkgs: [
-    // 组件依赖构建顺序
-  ],
 };

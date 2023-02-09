@@ -5,7 +5,7 @@
     "module": "esnext",
     "lib": ["es2018", "dom"],
     "rootDir": "./",
-    "outDir": "es",
+    // "outDir": "es",
     "moduleResolution": "node",
     "importHelpers": true,
     "jsx": "react",
@@ -25,14 +25,19 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "paths": {
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ],
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"],
-      "@@@/*": ["docs/*"]
+      "@@@/*": ["docs/*"],
+      // "@ifss/*": ["node_modules/@ifss"]
     },
     "allowSyntheticDefaultImports": true,
-    "typeRoots": ["typings", "node_modules/@types"]
+    "typeRoots": ["typings", "node_modules/@types"],
     // "files": ["*.ts", "*.tsx", ".md"],
   },
-  "include": ["src/**/*", "dosc/**/*"],
-  "exclude": ["node_modules", "lib", "es", "dist", "typings", "**/__test__", "test"]
+  // "include": ["src/**/*", "dosc/**/*", "node_modules"],
+  // "exclude": ["lib", "es", "dist", "typings", "**/__test__", "test"]
 }

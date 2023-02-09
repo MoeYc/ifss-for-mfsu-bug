@@ -23,7 +23,7 @@
   "description": "前端组件开发。",
   "mode": "site",
   "repository": {
-    "url": "",
+    "url": "https://github.com/buquan/ifss",
     "branch": "master"
   },
   "theme": {},

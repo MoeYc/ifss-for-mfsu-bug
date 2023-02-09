@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "father-build --watch",
-    "docdev": "dumi dev",
+    "abc": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "deploy": "npm run docs:build && npm run docs:deploy",
@@ -33,11 +33,11 @@
   },
   "files": [
     "es",
-    "lib",
-    "index.d.ts"
+    "lib"
   ],
   "module": "./es/index.js",
   "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged"
   },

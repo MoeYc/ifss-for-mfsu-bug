@@ -4,8 +4,8 @@ import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/Users/buquan/Desktop/turbo/examples/with-create-react-app/node_modules/.pnpm/@umijs+runtime@3.5.36_react@16.14.0/node_modules/@umijs/runtime';
-import { renderClient } from '/Users/buquan/Desktop/turbo/examples/with-create-react-app/node_modules/.pnpm/@umijs+renderer-react@3.5.36_hflg5r6ml7trnjm7sh3tgaza54/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from '/Users/buquan/Desktop/githubs/ifss/node_modules/.pnpm/@umijs+runtime@3.5.36_react@16.14.0/node_modules/@umijs/runtime';
+import { renderClient } from '/Users/buquan/Desktop/githubs/ifss/node_modules/.pnpm/@umijs+renderer-react@3.5.36_hflg5r6ml7trnjm7sh3tgaza54/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 
 const getClientRender = (args: { hot?: boolean; routes?: any[] } = {}) =>

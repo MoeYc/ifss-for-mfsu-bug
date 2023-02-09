@@ -2,7 +2,7 @@
 import {
   createBrowserHistory,
   History,
-} from '/Users/buquan/Desktop/turbo/examples/with-create-react-app/node_modules/.pnpm/@umijs+runtime@3.5.36_react@16.14.0/node_modules/@umijs/runtime';
+} from '/Users/buquan/Desktop/githubs/ifss/node_modules/.pnpm/@umijs+runtime@3.5.36_react@16.14.0/node_modules/@umijs/runtime';
 
 let options = {
   basename: '/',
