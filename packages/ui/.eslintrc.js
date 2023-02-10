@@ -1,6 +1,1 @@
-module.exports = {
-  extends: ['@ifss/eslint-config-custom'],
-  rules: {
-    // 'no-unused-vars': 2,
-  },
-};
+module.exports = require('@ifss/eslint-config-custom');

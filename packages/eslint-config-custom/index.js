@@ -13,6 +13,7 @@ module.exports = {
       version: 'detect',
     },
   },
+  // 此处是supervison的配置（先放这）
   rules: {
     'no-continue': 0,
     'no-control-regex': 0,
@@ -22,8 +23,10 @@ module.exports = {
     'react/forbid-prop-types': 0,
     'react/no-array-index-key': 0,
     'react/jsx-one-expression-per-line': 0,
-    // 'import/no-unresolved': 0,
-    'import/no-extraneous-dependencies': 0,
+    // 'import/no-unresolved': [1, { ignore: ['^@/', '^umi/'] }],
+    // 'import/no-extraneous-dependencies': [2, { optionalDependencies: true }],
+    'import/no-unresolved': 0, // 我认为应该单独配置
+    'import/no-extraneous-dependencies': 0, // 我认为应该单独配置
     'jsx-a11y/no-noninteractive-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,
     'jsx-a11y/no-static-element-interactions': 0,
@@ -58,16 +61,12 @@ module.exports = {
     'react/no-danger': 0,
     'no-console': 0,
     'no-alert': 0,
-    'no-unused-vars': 0,
+    'no-unused-vars': 1,
     'func-names': 0,
     'object-shorthand': 0,
     'no-param-reassign': 0,
     'no-multiple-empty-lines': 0,
     'prefer-destructuring': 0,
-    '@typescript-eslint/no-var-requires': 0,
-  },
-  settings: {
-    polyfills: ['fetch', 'promises', 'url'],
   },
   globals: {
     BMapGL: true,

@@ -1,3 +1,5 @@
-const add = (a: number, b: number, c?: 0) => a + b + c;
+const add = (a: number, b: number) => {
+  return a + b;
+};
 
 export default add;

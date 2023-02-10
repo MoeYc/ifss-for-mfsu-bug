@@ -58,10 +58,9 @@ yarn-error.log*
 .env.local
 
 #library
-/packages/tools/es
-/packages/tools/lib
-/packages/ui/es
-/packages/ui/lib
+/packages/tools/dist
+/packages/ui/dist
+/packages/ui/dist
 
 
 

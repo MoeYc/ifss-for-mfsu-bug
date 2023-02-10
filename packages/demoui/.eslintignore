@@ -3,12 +3,5 @@
 **/*.html
 package.json
 
-# umi
-.umi
-.umi-production
-.umi-test
-.env.local
-
 # library
 dist
-.tubo

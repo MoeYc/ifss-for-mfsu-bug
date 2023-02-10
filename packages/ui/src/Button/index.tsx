@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import * as tools from '@ifss/tools';
-import Desc from '../Desc';
+import Desc from '@/Desc';
 // import style from './index.less';
 import './index.less';
 console.log('module ui/button');
@@ -11,7 +11,7 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({ children, onClick, type = 'default', disabled }) => {
-  console.log('add -> toolstoolstoolstoolstoolstools btn组件1231111zx哪', tools);
+  console.log('我是ifss/ui/Button组件，打印引入的tools', tools);
   return (
     <div>
       <div>
@@ -19,7 +19,7 @@ const Button: FC<ButtonProps> = ({ children, onClick, type = 'default', disabled
       </div>
       <div>
         <button className="biz_dev_button" onClick={onClick} disabled={disabled}>
-          {children}button1
+          {children} aaaabtn
         </button>
       </div>
     </div>

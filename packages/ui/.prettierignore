@@ -9,7 +9,6 @@ package.json
 .umi-test
 .env.local
 
-#library
-es
-lib
+# library
+dist
 .tubo

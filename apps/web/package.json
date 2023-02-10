@@ -1,12 +1,7 @@
 {
   "name": "web",
-  "version": "0.0.4",
+  "version": "0.0.0",
   "private": true,
-  "author": "buq",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/buquan/ifss"
-  },
   "scripts": {
     "start": "react-scripts start",
     "dev": "react-scripts start",
@@ -14,28 +9,27 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "TIMING=1 eslint \"src/**/*.ts*\"",
-    "clean": "rm -rf build",
-    "format": "prettier --write \"**/*.{js,jsx,tsx,ts,less,json}\""
+    "clean": "rm -rf build"
   },
   "dependencies": {
-    "@ifss/tools": "workspace:*",
+    "@ifss/demoui": "workspace:*",
     "@ifss/ui": "workspace:*",
-    "antd": "^4.18.9",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.2"
   },
   "devDependencies": {
-    "@ifss/config": "workspace:*",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.14",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
     "@types/testing-library__jest-dom": "^5.14.5",
+    "react-app-rewire-less": "^2.1.3",
+    "tsconfig": "workspace:*",
     "typescript": "^4.5.4"
   },
   "eslintConfig": {

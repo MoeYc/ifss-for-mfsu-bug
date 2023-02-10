@@ -1,33 +1,33 @@
 import React from 'react';
-
-import { Button } from '@ifss/ui';
-// import { Desc } from '@ifss/ui';
-
-import { add, say, sub } from '@ifss/tools';
+import { Link } from '@ifss/demoui';
+import { Button, MyProCard } from '@ifss/ui';
 import './App.css';
 
-console.log(add, 'add');
-console.log(sub, 'sub');
-console.log(say, 'say');
-// console.log(Button, 'ButtonButtonButtonButton')
-
 function App() {
-  // const Button = require("@ifss/ui");
+  console.log(Button, '@ifss/ui');
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="header">
-          Web
+          Web123
           <div className="Turborepo">Turborepo Example</div>
         </h1>
         <div>
-          {/* <Dialog>DialogDialogDialog</Dialog> */}
-          <h1>
-            person: <Button />{' '}
-          </h1>
-          {/* <Desc /> */}
+          <Link className="App-link" href="https://turbo.build/repo">
+            Turborepo Docs
+          </Link>
+          <span> | </span>
+          <Link className="App-link" href="https://reactjs.org">
+            React Docs
+          </Link>
         </div>
       </header>
+      <div>
+        Button: <Button>btbtnbtnn</Button>
+      </div>
+      <div>
+        MyProCard: <MyProCard />
+      </div>
     </div>
   );
 }
