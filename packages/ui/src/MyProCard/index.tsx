@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Space, Image } from 'antd';
+import { Card, Space, Image, Button as AntdButton } from 'antd';
 
 const MyProCard: React.FC = () => (
   <Space direction="vertical" size={16}>
@@ -13,6 +13,7 @@ const MyProCard: React.FC = () => (
       <p> MyProCard Card content</p>
       <p> MyProCard Card content</p>
     </Card>
+    AntdButton: <AntdButton type="primary">im procard的AntdButton</AntdButton>
     <Image
       width={200}
       src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"

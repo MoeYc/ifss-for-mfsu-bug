@@ -17,6 +17,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@ifss/tools": "workspace:*"
   },

@@ -11,7 +11,7 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({ children, onClick, type = 'default', disabled }) => {
-  console.log('我是ifss/ui/Button组件，打印引入的tools', tools);
+  console.log('我是 ifss/ui/Button 组件，打印引入的tools', tools);
   return (
     <div>
       <div>

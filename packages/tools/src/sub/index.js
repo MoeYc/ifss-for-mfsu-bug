@@ -1,2 +1,2 @@
-const sub = (a, b, c) => a - b;
+const sub = (a, b) => a - b;
 export default sub;

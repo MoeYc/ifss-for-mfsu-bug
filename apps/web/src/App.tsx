@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from '@ifss/demoui';
 import { Button, MyProCard } from '@ifss/ui';
+import { Button as AntdButton } from 'antd';
 import './App.css';
+import './demo.less';
 
 function App() {
   console.log(Button, '@ifss/ui');
@@ -9,7 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="header">
-          Web123
+          Web
           <div className="Turborepo">Turborepo Example</div>
         </h1>
         <div>
@@ -18,7 +20,7 @@ function App() {
           </Link>
           <span> | </span>
           <Link className="App-link" href="https://reactjs.org">
-            React Docs
+            ReactReact Docs
           </Link>
         </div>
       </header>
@@ -27,6 +29,9 @@ function App() {
       </div>
       <div>
         MyProCard: <MyProCard />
+      </div>
+      <div>
+        AntdButton: <AntdButton type="primary">12345678</AntdButton>
       </div>
     </div>
   );

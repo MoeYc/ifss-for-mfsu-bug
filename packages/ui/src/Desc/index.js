@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Desc = (props) => {
-  const { text = 'desc' } = props;
+  const { text = 'desc deault' } = props;
   return <div>{text}</div>;
 };
 

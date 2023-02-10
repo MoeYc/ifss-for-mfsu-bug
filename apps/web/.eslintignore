@@ -1,0 +1,10 @@
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+
+# library
+test
+dist
+scripts
+config

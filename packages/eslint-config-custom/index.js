@@ -90,4 +90,11 @@ module.exports = {
     jest: true,
     jasmine: true,
   },
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      modules: true,
+    },
+  },
 };

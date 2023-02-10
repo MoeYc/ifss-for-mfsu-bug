@@ -3,12 +3,12 @@
   "include": ["."],
   "exclude": ["dist", "node_modules"],
   "compilerOptions": {
+    "outDir": "",
     "baseUrl": "./",
     "lib": ["dom", "esnext"],
     "paths": {
+      "@/*": ["src/*"],
       "*": ["src/*", "node_modules/*"]
-    },
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
+    }
   },
 }

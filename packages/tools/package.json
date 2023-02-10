@@ -7,8 +7,7 @@
     "url": "https://github.com/buquan/ifss"
   },
   "files": [
-    "es",
-    "lib"
+    "dist"
   ],
   "author": "buq",
   "license": "ISC",
