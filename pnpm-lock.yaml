@@ -43,7 +43,6 @@ importers:
     specifiers:
       '@babel/core': ^7.16.0
       '@ifss/demoui': workspace:*
-      '@ifss/tools': workspace:*
       '@ifss/ui': workspace:*
       '@pmmmwh/react-refresh-webpack-plugin': ^0.5.3
       '@svgr/webpack': ^5.5.0
@@ -110,7 +109,6 @@ importers:
     dependencies:
       '@babel/core': 7.20.12
       '@ifss/demoui': link:../../packages/demoui
-      '@ifss/tools': link:../../packages/tools
       '@ifss/ui': link:../../packages/ui
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.10_unmakpayn7vcxadrrsbqlrpehy
       '@svgr/webpack': 5.5.0

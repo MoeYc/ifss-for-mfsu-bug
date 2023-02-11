@@ -36,13 +36,9 @@ pnpm run dev
 ```
 
 ## todo
-- gitigonre 和 eslintignore 处理
-- @ifss/config 还能提取更多通用配置（比如ts配置）
-- library单测
-- 单个仓库启动依赖的turbo配置
-- npm私有仓库配置
-- ci cd 配置
+- ci cd 配置 (npm私有仓库配置, gitlab hooks等)
 - 环境变量turbo缓存优化
+- library单测
 - 组件库文档地址托管
 - ******迁移umi项目到app******
 

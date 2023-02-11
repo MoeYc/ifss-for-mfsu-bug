@@ -8,7 +8,9 @@
   },
   "scripts": {
     "dev": "turbo run dev --no-cache --continue",
+    "dev:web": "turbo run dev --filter='web...' --no-cache --continue",
     "build": "turbo run build",
+    "build:web": "turbo run build --filter='web...'",
     "clean": "turbo run clean",
     "format": "turbo run format",
     "lint": "turbo run lint",
