@@ -1,9 +1,6 @@
 {
-  "name": "tsconfig",
-  "version": "0.0.0",
+  "name": "@ifss/tsconfig",
+  "version": "0.0.3",
   "private": true,
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  }
+  "license": "MIT"
 }

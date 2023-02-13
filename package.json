@@ -7,17 +7,24 @@
     "url": "https://github.com/buquan/ifss"
   },
   "scripts": {
-    "dev": "turbo run dev --no-cache --continue",
-    "dev:web": "turbo run dev --filter='web...' --no-cache --continue",
+    "start": "turbo run start --no-cache --continue",
+    "start:mic": "turbo run start --filter=master-app... --filter=qiankun-app1... --filter=qiankun-app2... --no-cache --continue",
+    "start:demoapp": "turbo run start --filter=demoapp... --no-cache --continue",
+    "start:umi3demo": "turbo run start --filter=umi3demo... --no-cache --continue",
+    "start:pkgs": "turbo run start --filter=./packages/*... --no-cache --continue",
     "build": "turbo run build",
-    "build:web": "turbo run build --filter='web...'",
+    "build:mic": "turbo run start --filter=master-app --filter=qiankun-app1 --filter=qiankun-app2",
+    "build:demoapp": "turbo run build --filter=demoapp",
+    "build:umi3demo": "turbo run build --filter=umi3demo",
+    "build-pkgs": "turbo run build --filter=./packages/*",
     "clean": "turbo run clean",
     "format": "turbo run format",
     "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
     "test": "turbo run test",
     "changeset": "changeset",
     "version-pkgs": "changeset version",
-    "release": "turbo run build && changeset publish",
+    "release-pkgs": "pnpm run build-pkgs && changeset publish",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "husky install"
   },
@@ -25,13 +32,11 @@
     "@changesets/cli": "^2.26.0",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@types/node": "^16.11.14",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "eslint": "^8.4.1",
-    "gh-pages": "^3.0.0",
     "husky": "^8.0.3",
-    "lint-staged": "^10.0.7",
-    "@types/node": "^16.11.14",
+    "lint-staged": "^13.2.0",
     "prettier": "^2.5.1",
     "turbo": "latest",
     "typescript": "^4.5.3"
@@ -43,11 +48,5 @@
   "peerDependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
-  },
-  "lint-staged": {
-    "**/*.{ts,tsx,js,jsx}": [
-      "prettier --write",
-      "pnpm run lint --"
-    ]
   }
 }

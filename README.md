@@ -32,13 +32,10 @@ Run the following command:
 
 ```sh
 pnpm install
-pnpm run dev
+pnpm run start
 ```
 
 ## todo
-- ci cd 配置 (npm私有仓库配置, gitlab hooks等)
-- 环境变量turbo缓存优化
 - library单测
-- 组件库文档地址托管
-- ******迁移umi项目到app******
+- *****组件库文档地址托管*******
 

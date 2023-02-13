@@ -3,7 +3,7 @@
   "name": "umi3demo",
   "version": "0.0.0",
   "scripts": {
-    "dev": "cross-env WATCH_IGNORED=node_modules/(?!(lodash) umi dev",
+    "dev": "cross-env WATCH_IGNORED=node_modules/?!(abc) umi dev",
     "start": "umi dev",
     "build": "umi build",
     "postinstall": "umi generate tmp",
@@ -23,6 +23,7 @@
     ]
   },
   "dependencies": {
+    "@ifss/common-ui": "workspace:*",
     "@ant-design/pro-layout": "^6.5.0",
     "lodash": "^4.17.21",
     "react": "17.x",

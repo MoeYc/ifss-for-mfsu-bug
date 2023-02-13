@@ -1,30 +1,29 @@
 {
   "name": "@ifss/demoui",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "license": "MIT",
   "sideEffects": false,
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "start": "pnpm run dev",
     "dev": "tsup src/index.tsx --format cjs --watch --dts --external react",
     "build": "tsup src/index.tsx --format cjs --dts --external react",
     "clean": "rm -rf dist",
     "lint": "TIMING=1 eslint \"src/**/*.ts*\"",
     "lint:fix": "TIMING=1 eslint --fix \"src/**/*.ts*\""
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
-    "@ifss/tools": "workspace:*"
+    "@ifss/common-tools": "workspace:*"
   },
   "devDependencies": {
-    "eslint": "^8.4.1",
     "@ifss/eslint-config-custom": "workspace:*",
-    "tsconfig": "workspace:*",
+    "@ifss/tsconfig": "workspace:*",
+    "eslint": "^8.4.1",
     "tsup": "^5.10.1"
   },
   "peerDependencies": {
+    "antd": "4.18.9",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   }

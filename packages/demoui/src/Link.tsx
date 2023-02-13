@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { add } from '@ifss/tools';
+import { add } from '@ifss/common-tools';
 
 import { Select } from 'antd';
 

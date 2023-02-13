@@ -1,0 +1,13 @@
+{
+  "extends": "@ifss/tsconfig/react-library.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "",
+    "baseUrl": "./",
+    "lib": ["dom", "esnext"],
+    "paths": {
+      "@/*": ["src/*"],
+      "*": ["src/*", "node_modules/*"]
+    }
+  },
+}

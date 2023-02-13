@@ -1,5 +1,8 @@
-import { MyProCard } from '@ifss/ui';
+import { MyProCard } from '@ifss/common-ui';
+import _ from 'lodash';
 import styles from './index.less';
+
+console.log(_.has, 'lodash.has');
 
 export default function IndexPage() {
   return (

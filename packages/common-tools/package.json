@@ -1,0 +1,35 @@
+{
+  "name": "@ifss/common-tools",
+  "version": "0.0.0",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "author": "buq",
+  "license": "ISC",
+  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
+  "typings": "dist/cjs/index.d.ts",
+  "scripts": {
+    "start": "pnpm run dev",
+    "build": "father build",
+    "build:no-clean": "father build --no-clean",
+    "dev": "father dev",
+    "doctor": "father doctor",
+    "version": "father version",
+    "format": "prettier --write \"src/**/*.{js,jsx,tsx,ts,less,json}\"",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "father": "^4.1.3",
+    "@ifss/tsconfig": "workspace:*",
+    "@ifss/eslint-config-custom": "workspace:*"
+  }
+}

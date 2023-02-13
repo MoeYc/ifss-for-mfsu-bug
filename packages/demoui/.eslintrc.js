@@ -1,1 +1,6 @@
-module.exports = require('@ifss/eslint-config-custom');
+module.exports = {
+  extends: ['@ifss/eslint-config-custom'],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
+};
