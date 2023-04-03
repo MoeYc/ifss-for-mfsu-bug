@@ -11,11 +11,13 @@
     "start:mic": "turbo run start --filter=master-app... --filter=qiankun-app1... --filter=qiankun-app2... --no-cache --continue",
     "start:demoapp": "turbo run start --filter=demoapp... --no-cache --continue",
     "start:umi3demo": "turbo run start --filter=umi3demo... --no-cache --continue",
+    "start:umi4app": "turbo run start --filter=umi4app... --no-cache --continue",
     "start:pkgs": "turbo run start --filter=./packages/*... --no-cache --continue",
     "build": "turbo run build",
     "build:mic": "turbo run start --filter=master-app --filter=qiankun-app1 --filter=qiankun-app2",
     "build:demoapp": "turbo run build --filter=demoapp",
     "build:umi3demo": "turbo run build --filter=umi3demo",
+    "build:umi4app": "turbo run build --filter=umi4app",
     "build-pkgs": "turbo run build --filter=./packages/*",
     "clean": "turbo run clean",
     "format": "turbo run format",
@@ -41,12 +43,5 @@
     "turbo": "latest",
     "typescript": "^4.5.3"
   },
-  "packageManager": "pnpm@7.15.0",
-  "dependencies": {
-    "antd": "4.18.9"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
-  }
+  "packageManager": "pnpm@7.15.0"
 }

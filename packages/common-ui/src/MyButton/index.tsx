@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import * as tools from '@ifss/common-tools';
-import MyDesc from '@/MyDesc';
+import MyDesc from '../MyDesc';
+import './index.less'; // 如果不加这句，需要在项目中使用babel-plugin-import
 
 console.log('module ui/button');
 interface ButtonProps {

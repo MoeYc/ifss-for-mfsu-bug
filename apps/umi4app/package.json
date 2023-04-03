@@ -1,0 +1,28 @@
+{
+  "name": "umi4app",
+  "private": true,
+  "author": "buquan <1085161116@qq.com>",
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@ant-design/pro-layout": "^6.5.0",
+    "classnames": "^2.2.6",
+    "antd": "4.18.9",
+    "@umijs/max": "^4.0.0",
+    "@ifss/common-ui": "workspace:*",
+    "@ifss/components": "workspace:*",
+    "lodash": "^4.17.21",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "typescript": "^5.0.0"
+  }
+}

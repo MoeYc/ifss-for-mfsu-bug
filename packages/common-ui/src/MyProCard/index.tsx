@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Space, Image, Button as AntdButton } from 'antd';
+import MyDesc from '../MyDesc';
 import './index.less';
 
 const MyProCard: React.FC = function () {
@@ -28,7 +29,8 @@ const MyProCard: React.FC = function () {
         width={200}
         src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
       />
-      <p className={'procardWrapper'}>text class: procardWrapper</p>
+      <p className="pink">text class: procardWrapperyyy</p>
+      <MyDesc />
     </Space>
   );
 };

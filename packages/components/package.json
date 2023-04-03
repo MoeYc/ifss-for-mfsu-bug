@@ -1,0 +1,17 @@
+{
+  "name": "@ifss/components",
+  "version": "0.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "typings": "index.d.ts",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,tsx,ts,less,json}\"",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "@ifss/eslint-config-custom": "workspace:*",
+    "@ifss/tsconfig": "workspace:*"
+  }
+}
